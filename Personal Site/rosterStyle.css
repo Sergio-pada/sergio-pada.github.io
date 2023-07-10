@@ -1,0 +1,62 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FCF5E5;
+    text-decoration: none;
+    color:black
+}
+
+.card{
+    background-color: white;
+    border: solid black;
+    border-radius: 7.5px;
+    margin: auto;
+    width: 80%;
+    margin-top: -20vw;
+    transition: box-shadow 0.3s;
+    margin-bottom: 0;
+
+}
+.card:hover{
+    box-shadow: 20px 20px black;
+    
+}
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3.5vw;
+  width: 90%;
+  border: solid black;
+  border-radius: 7.5px;
+}
+h1{
+    font-size: 3vw;
+    text-align: center;
+    background-color: white;
+    
+}
+p{
+    padding: 12vw;
+    padding-top: 0;
+    font-size: 1.5vw;
+    background-color: white;
+    text-decoration: none;
+    
+}
+h2{
+    opacity: .5;
+    font-size: 2vw;
+    background-color: white;
+    text-align: center;
+}
+
+.home{
+    font-size: 4vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background-color: #FCF5E5;
+    transform: rotate(-90deg);
+    margin-left: -88vw;
+    margin-top: 15vw;
+
+  }
