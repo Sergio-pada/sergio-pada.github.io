@@ -60,3 +60,25 @@ h2{
     margin-top: 15vw;
 
   }
+@media (max-width: 900px){
+    .card{
+        width: 95%;
+        margin-top: 0vw
+    }
+    .home{
+        transform: rotate(0deg);
+        margin-left: 2vw;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 6vw;
+        text-align: left;
+    }
+    h1{
+        font-size: 6vw;
+    }
+    h2{
+        font-size: 4vw;
+    }
+    p{
+        font-size: 3vw;
+    }
