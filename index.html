@@ -1,33 +1,99 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">    
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/public/style.css">
+    <title>S. Pada</title>
 </head>
 <body>
-    <h1 class="name">SERGIO PADA</h1>
-    <h1 class ="title">Software Developer</h1>
-    <div class="container">
-        <div class="Cafe">
-            <a href="https://thekeenecafe.com/"><img class="project" src="CafeMainMenu.png" alt="Cafe"></a>
+    <header>
+        <a href="/"><h1 id="name">SERGIO PADA</h1></a>        
+        <hr>
+        <nav>
+            <a href="skills.html"><p id="vol">SKILLS</p></a>
+            <p id="date"></p>
+            <a href="contact.html"><p id="phone">CONTACT</p></a>
+        </nav>
+        <hr>      
+        <h1 id="title">FULL STACK SOFTWARE DEVELOPER</h1>
+    </header>
+
+    <div class="grid">
+        <div id="item-0">
+            <hr>
+            <h1 id="cali">PROJECTS</h1>
+            <hr>
         </div>
-        <div class="Inv">
-            <a href="inv.html"><img class="project" src="InvMainMenu.png" alt="Inventory Program"></a>
+
+        <div id="item-1">
+            <a href="https://fathomless-woodland-38409-8d4eaec4d1f7.herokuapp.com/">
+                <img class="article-img" src="/public/palaceofgreenporcelain.png" alt="">
+                <h1 class="project-title">PALACE OF GREEN PORCELAIN</h1>
+                <p>This website is an online archive of exhibits for a fictional museum based on the artifacts described in The Time Machine by H.G. Wells.</p>
+                <br>
+                <p>This site was built with the use of: HTML, CSS, Javascript (Node.js), TensorFlow.JS, Chart.js, and PostgreSQL. The site uses a machine learning model built using TensorFlow.js to recommend exhibits to users based on their previous activity on the site. In addition to the machine learning model, the data on exhibits and users is aggregated and used for data visualizations on user activity accessable via the "Dashboard" page.</p>
+            </a>
         </div>
-        <div class="Roster">
-            <a href="roster.html"><img class="project" src="StudentRoster.png" alt="Student Roster Program"></a>
+
+        <div id="item-2">
+            <a href="https://github.com/Sergio-pada/c195-appointment-scheduler">
+                <h1 class="project-title">APPOINTMENT SCHEDULING APPLICATION</h1>
+                <p>This desktop application is used to keep track of a company's appointments associated with a variety of customers and employees of the organization. Additionally, it is designed to handle appointment tracking across multiple countries. The application can also generate appointment schedules for customers and sort the appointments by their type and month.</p>
+                <br>
+                <p>This application was built using Java, JavaFX, and uses a MySQL Server. The program implements a user authentication system. In addition, it defines and manipulates data related to customers, appointments, and users. It can handle users across different time zones and countries through time zone conversion.</p>
+                <br>
+            </a>
+
+            <a href="https://replit.com/@sqpada/c950-package-delivery">
+                <h1 class="project-title">PACKAGE DELIVERY SYSTEM</h1>
+                <p>This Python simulation is designed to optimize delivery routes across three package delivery trucks, minimizing the time delivery drivers spend on the road. The program not only facilitates real-time delivery tracking throughout the day but also calculates the distance of each package to its destination based on the current time of day.</p>                <br>
+                <p>This project was built with the use of Python. Packages are sorted on each truck using the nearest neighbor algorithm on each packages address. It utilizes a custom hash table for the storage and retreival of package object data.</p>
+
+            </a>
+            
+            <footer>
+            
+            <div class="footer-icons">
+                <a href="https://github.com/Sergio-pada" class="fa fa-github"></a>
+                <a href="https://www.linkedin.com/in/sergio-pada/" class="fa fa-linkedin"></a>
+            </div>
+            <p class="copyright">© Sergio Pada 2024</p>
+            </footer>
         </div>
-        <div class="packageDelivery">
-            <a href="packageDelivery.html"><img class="project" src="PackageDelivery2.png" alt="Package Sorting Program"></a>
+
+
+        <div id="item-3">
+            <a href="https://github.com/Sergio-pada/DVD-Database-Report/blob/main/total_sales.sql">
+                <h1 class="project-title">EMPLOYEE SALES REPORT GENERATOR</h1>
+                <p>This file creates a database from data found in the sample DVD Rental database from postgresqltutorial.com to track sales data for individual employees of a sample DVD rental company.</p>
+                <br>
+                <p>This SQL file allows for regular updates on the employee sales reports as new sales data is collected. It uses the DVD Rental database found here: https://www.postgresqltutorial.com/postgresql-getting-started/postgresql-sample-database/</p>
+                <br>
+            </a>
+
+            <a href="https://replit.com/@sqpada/Student-Roster">
+                <h1 class="project-title">STUDENT SORTING PROGRAM</h1>
+                <p>A program for sorting students by different attributes, such as their degree program and the average amount of time that they take to complete a course. The program is also capable of identifying incorrectly formatted student data.</p>            
+                <br>
+                <p>This program was built in C++ and parses through an array of strings containing comma-delimited student data in order to create a list of student objects that are then sorted.</p>
+            </a>
         </div>
-        <div class="SQL">
-            <a href="https://github.com/Sergio-pada/DVD-Database-Report/tree/main"><div class="link-container"></div></a>
+
+        <div id="item-4">
+            <a href="https://thekeenecafe.com/">
+                <img class="article-img" src="/public/CafeMainMenu.png" alt="">
+                <h1 class="project-title">KEENE CAFE SITE</h1>
+                <p>This website was built for the historic Keene Cafe located at 30256 Woodford-Tehachapi Rd, Keene, CA. It features the restaurants menu, a Google Maps view of the cafe's location, and a brief history of the cafe.</p>
+                <br>
+                <p>This site was built using HTML and CSS. The site is hosted through GitHub Pages.</p>
+            </a>
         </div>
-      </div>
+
+    </div>
+    <hr>
+    <script src="/public/script.js"></script>
 </body>
 </html>

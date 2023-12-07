@@ -1,0 +1,292 @@
+/*
+    PAGEWIDE
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: justify;
+}
+body{
+    background-color: #FAF9F6;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav{
+    padding: 10px 0px 10px 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Franklin Gothic Demi', 'Franklin Gothic', sans-serif;
+}
+
+img {
+    width: 95%;
+    padding: 5%;
+    margin: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: black solid 1px;
+    filter: saturate(0%);
+    transition: filter 0.3s ease;
+}
+ 
+img:hover {
+    filter: saturate(100%);
+}
+
+hr {
+    overflow: visible; 
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+
+hr:after {
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+}
+
+a {
+    text-decoration: underline transparent;
+    color: black;
+    transition: text-decoration 500ms ease;
+}
+
+a:hover {
+    text-decoration-color: black;
+}
+
+
+
+/*
+    HEADER
+*/
+
+#title {
+    text-align: center;
+    white-space: nowrap;
+    font-size: 5.3vw;
+}
+
+#name{
+    text-align: center;
+    font-size: 300%;
+}
+
+#vol{
+    text-align: left;
+    display: inline-block;
+    width: 33%;
+}
+
+
+#date{
+    text-align: center;
+    display: inline-block;
+    width: 33%;
+    white-space: nowrap;  
+}
+
+#phone{
+    text-align: right;
+    display: inline-block;
+    width: 33%;
+}
+
+/*
+    MAIN
+*/
+  
+#cali{
+    text-align: center;
+    white-space: nowrap;
+    font-size: 9vw;
+    margin-block-start: 0em;
+}
+
+.project-title{
+    text-align: center;
+    font-size: 1vw;
+    padding: 10px;
+}
+
+.article-img {
+    width: 100%;
+    margin: 0px;
+    margin-top: 4%;
+}
+
+.grid {
+    display: grid; 
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 100%;
+    column-gap: 20px;
+    padding-bottom: 5px;
+}
+    
+#item-0 {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-end: 2;
+    grid-column-end: 4;
+}
+
+#item-1 {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 2;
+}
+
+#item-2 {
+    grid-row-start: 1;
+    grid-column-start: 4;
+    grid-row-end: 3;
+    grid-column-end: 5;
+}
+
+#item-3 {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-row-end: 3;
+    grid-column-end: 3;
+}
+
+#item-4 {
+    grid-row-start: 2;
+    grid-column-start: 3;
+    grid-row-end: 3;
+    grid-column-end: 4;
+}
+
+.copyright{
+    padding: 7px 15px 10px 0;
+    padding-left: 40px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+footer{
+    border: solid black 1px;
+    text-align: center;
+}
+
+.fa {
+    float: left;
+    padding:  0 40px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+/*
+    SKILLS
+*/
+
+.grid2 {
+    display: grid; 
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0px;
+    height: 100%;
+}
+
+ #item-5 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin: 10px;
+    border: solid black 1px;
+}
+
+#item-6 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#item-7 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    margin: 10px;
+    border: solid black 1px;
+}
+
+#general{
+    margin: 10px;
+    border: solid black 1px;
+}
+
+ul {
+    display: block;
+    padding: auto;
+    margin: auto;
+    padding-left: 8%;
+}
+
+ul ul {
+    padding-left: 20px;
+}
+
+li{
+    font-size: 200%;
+}
+
+.skill-category{
+    text-align: center;
+    font-size: 2vw;
+    padding: 10px;
+}
+
+/*
+    CONTACT
+*/
+/* Add your custom styles here */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border: black solid 1px;
+}
+
+input[type="submit"]:hover {
+    background-color: black;
+    color: white;
+}
+
+#contact{
+    display: inline-block;
+}
