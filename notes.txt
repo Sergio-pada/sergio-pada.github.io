@@ -1,0 +1,15 @@
+To Do:
+    • Remove padding on top of <ul> 
+
+Font/Sidebar Inspo:
+    https://samanthakeelysmith.com/
+
+Project Heirarchy:
+• Museum
+• Keene Cafe
+• Appointment Scheduler
+• Inventory System
+• Package Delivery System
+• Student Roster
+• DVD Rental
+• Coffee Shop
