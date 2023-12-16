@@ -1,5 +1,6 @@
 To Do:
-    • P elements for projects
+    • Project links
+    • Dark mode?
     • Improve responsiveness
 
 

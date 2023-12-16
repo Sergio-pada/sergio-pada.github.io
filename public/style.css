@@ -6,10 +6,11 @@ Google Fonts Rules:
 body{
     font-family: 'Figtree', sans-serif;
 }
-h1, h3,p {
+h1,p {
     font-family: 'Playfair Display', serif;
 }
 img {
     border: 1px solid black;
     border-radius: 2%;
 }
+
