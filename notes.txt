@@ -1,7 +1,8 @@
 To Do:
+    • Improve responsiveness
     • Project links
     • Dark mode?
-    • Improve responsiveness
+    
 
 
 
