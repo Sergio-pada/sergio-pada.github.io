@@ -10,30 +10,45 @@
     <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
     <!-- Social Logos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <!-- Style Sheet -->
-    <link rel="stylesheet" href="public/style.css">
-    
+    <!-- Custom CSS -->
+    <style>
+        body{
+            font-family: 'Figtree', sans-serif;
+        }
+        h1,p {
+            font-family: 'Playfair Display', serif;
+        }
+        img {
+            border: 1px solid black;
+            border-radius: 2%;
+        }
+
+        @media (min-width: 768px) {
+            .position-md-fixed {
+            position: fixed;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="col-md-3 m-2 position-md-fixed">
-        <h1>SERGIO<br>PADA</h1>
-            <p style="font-style: italic;">Full Stack Developer</p>
 
-    
+    <div class="col-md-3 m-2 position-md-fixed">
+        <a href="/index.html" style=" color: black; text-decoration: none;"><h1>SERGIO<br>PADA</h1></a>
+        <p style="font-style: italic;">Full Stack Developer</p>
         <nav>
             <ul class="list-unstyled">
-                <li class="text-muted">projects</li>
-                <li class="text-muted">about</li>
-                <li class="text-muted">contact</li>
+                <a href="#"><li class="text-muted">projects</li></a>
+                <a href="#about"><li class="text-muted">about</li></a>
+                <a href="#contact"><li class="text-muted">contact</li></a>
             </ul>
         </nav>
         <a href="https://www.linkedin.com/in/sergio-pada/" class="mr-3 text-muted"><i class="fab fa-linkedin fa-1x"></i></a>
         <a href="https://github.com/Sergio-pada" class="mr-3 text-muted"><i class="fab fa-github fa-1x"></i></a>
         <a href="mailto:pada.sergio@gmail.com" class="mr-3 text-muted"><i class="fab fa-envelope fa"></i></a>
-</div>
+    </div>
+
     <div class="container-fluid">
         <div class="row text-center">
             <div class="col-md-9 offset-md-3">
@@ -41,83 +56,65 @@
                 <hr>
             </div>
         </div>
-        
+
         <div class="row">
             <div class="col-md-3 offset-md-3">
                 <h3 class="text-center">THE KEENE CAFE</h3>
-                <img src="public/keenecafe.png" alt="" style="width: 100%;">
-                 <p class="text-justify">This website was built for the historic Keene Cafe located at 30256 Woodford-Tehachapi Rd, Keene, CA. It features the restaurants menu, a Google Maps view of the cafe's location, and a brief history of the cafe.</p>
-                 <p class="text-justify">This site was built using HTML and CSS. The site is hosted through GitHub Pages.</p>
-                
-                 <h3 class="text-center">STUDENT ROSTER</h3>
-                <img src="public/studentroster.png" alt="" style="width: 100%;">
-                 <p class="text-justify">A program for sorting students by different attributes, such as their degree program and the average amount of time that they take to complete a course. The program is also capable of identifying incorrectly formatted student data.</p>            
-                 <p class="text-justify">This program was built in C++ and parses through an array of strings containing comma-delimited student data in order to create a list of student objects that are then sorted.</p>
-                
-                 
-                
-                
-                <h3 class="text-center">COFFEE SHOP DATABASE REPORT</h3>
-                <img src="public/coffeeshop2.png" alt="" style="width: 100%;">
-                 <p class="text-justify">This SQL script sets up a relational database schema for managing information related to a fictional chain of coffee shops and their employees, suppliers, and coffee products. It also inserts sample data and creates a view for easy access to employee details. The creation of an index enhances the efficiency of queries involving the coffee_name column in the Coffee table.</p>
-                
-
-                 
+                <a href="https://thekeenecafe.com/"><img src="public/keenecafe.png" alt="" style="width: 100%;"></a>
+                <p class="text-justify">This website was built for the historic Keene Cafe located at 30256 Woodford-Tehachapi Rd, Keene, CA. It features the restaurant's menu, a Google Maps view of the cafe's location, and a brief history of the cafe.</p>
+                <p class="text-justify">The site was built using HTML and CSS and is hosted through GitHub Pages.</p>
+            
+                <h3 class="text-center">STUDENT ROSTER</h3>
+                <a href="https://replit.com/@sqpada/Student-Roster"><img src="public/studentroster.png" alt="" style="width: 100%;"></a>
+                <p class="text-justify">A program for sorting students by different attributes, such as their degree program and the average amount of time that they take to complete a course. The program is also capable of identifying incorrectly formatted student data.</p>
+                <p class="text-justify">This program was built in C++ and parses through an array of strings containing comma-delimited student data to create a list of student objects that are then sorted.</p>
+            
+                <h3 class="text-center">DVD RENTAL DATABASE REPORT</h3>
+                <a href="https://github.com/Sergio-pada/DVD-Database-Report/blob/main/README.md"><img src="public/coffeeshop2.png" alt="" style="width: 100%;"></a>
+                <p class="text-justify">This file creates a database from data found in the sample DVD-rental database from postgresqltutorial.com to track sales data for individual employees of the sample company. This SQL file uses the DVD Rental database found here: https://www.postgresqltutorial.com/postgresql-getting-started/postgresql-sample-database/</p>
             </div>
             <div class="col-md-3">
                 <h3 class="text-center">APPOINTMENT SCHEDULING APP</h3>
-                <img src="public/appointmentscheduler1.png" alt="" style="width: 100%;">
-                 <p class="text-justify">This desktop application is used to keep track of a company's appointments associated with a variety of customers and employees of the organization. Additionally, it is designed to handle appointment tracking across multiple countries. The application can also generate appointment schedules for customers and sort the appointments by their type and month.</p>
-                 <p class="text-justify">This application was built using Java, JavaFX, and uses a MySQL Server. The program implements a user authentication system. In addition, it defines and manipulates data related to customers, appointments, and users. It can handle users across different time zones and countries through time zone conversion.</p>
-                
-                
-
-                 <h3 class="text-center">INVENTORY SYSTEM APP</h3>
-                 <img src="public/inventorysystem.png" alt="" style="width: 100%;">
-                 <p class="text-justify">The Product and Parts Management System is a desktop application designed to streamline and organize a company's data related to products and their constituent parts. This application serves as a comprehensive solution for managing inventory, pricing, and procurement details for both products and individual parts. </p>
-                 <p class="text-justify">This projust was built using Java for the logic and JavaFX for the user-interface.</p>
-                 
-
-              
-
-                
+                <a href="https://github.com/Sergio-pada/c195-appointment-scheduler/blob/main/README.md"><img src="public/appointmentscheduler1.png" alt="" style="width: 100%;"></a>
+                <p class="text-justify">This desktop application is used to keep track of a company's appointments associated with a variety of customers and employees. Additionally, it is designed to handle appointment tracking across multiple countries, generate appointment schedules, and sort appointments by type and month.</p>
+                <p class="text-justify">The application was built using Java, JavaFX, and a MySQL Server. It implements a user authentication system and handles users across different time zones and countries through time zone conversion.</p>
+            
+                <h3 class="text-center">INVENTORY SYSTEM APP</h3>
+                <a href="https://github.com/Sergio-pada/c482-inventory-system/blob/main/README.md"><img src="public/inventorysystem.png" alt="" style="width: 100%;"></a>
+                <p class="text-justify">The Product and Parts Management System is a desktop application designed to streamline and organize a company's data related to products and their constituent parts. This application serves as a comprehensive solution for managing inventory, pricing, and procurement details for both products and individual parts.</p>
+                <p class="text-justify">This project was built using Java for the logic and JavaFX for the user interface.</p>
             </div>
             <div class="col-md-3">
-                
                 <h3 class="text-center">THE PALACE OF GREEN PORCELAIN</h3>
-                <img src="public/museum.png" alt="" style="width: 100%;">
-                 <p class="text-justify">This website is an online archive of exhibits for a fictional museum based on the artifacts described in The Time Machine by H.G. Wells.</p>
-                 <p class="text-justify">This site was built with the use of: HTML, CSS, Javascript (Node.js), TensorFlow.JS, Chart.js, and PostgreSQL. The site uses a machine learning model built using TensorFlow.js to recommend exhibits to users based on their previous activity on the site. In addition to the machine learning model, the data on exhibits and users is aggregated and used for data visualizations on user activity accessable via the "Dashboard" page.</p>
-                
-                
-                 <h3 class="text-center">PACKAGE DELIVERY SYSTEM</h3>
-                 <img src="public/packagedelivery.png" alt="" style="width: 100%;">
-                  <p class="text-justify">This Python simulation is designed to optimize delivery routes across three package delivery trucks, minimizing the time delivery drivers spend on the road. The program not only facilitates real-time delivery tracking throughout the day but also calculates the distance of each package to its destination based on the current time of day.</p>                
-                  <p class="text-justify">This project was built with the use of Python. Packages are sorted on each truck using the nearest neighbor algorithm on each packages address. It utilizes a custom hash table for the storage and retreival of package object data.</p>
-                 
+                <a href="https://fathomless-woodland-38409-8d4eaec4d1f7.herokuapp.com/"><img src="public/museum.png" alt="" style="width: 100%;"></a>
+                <p class="text-justify">This website is an online archive of exhibits for a fictional museum based on the artifacts described in The Time Machine by H.G. Wells.</p>
+                <p class="text-justify">The site was built with HTML, CSS, JavaScript (Node.js), TensorFlow.JS, Chart.js, and PostgreSQL. It uses a machine learning model built with TensorFlow.js to recommend exhibits based on user activity and features data visualizations on user activity accessible via the "Dashboard" page.</p>
+            
+                <h3 class="text-center">PACKAGE DELIVERY SYSTEM</h3>
+                <a href="https://replit.com/@sqpada/c950-package-delivery"><img src="public/packagedelivery.png" alt="" style="width: 100%;"></a>
+                <p class="text-justify">This Python simulation optimizes delivery routes across three package delivery trucks, minimizing the time delivery drivers spend on the road. The program facilitates real-time delivery tracking throughout the day and calculates the distance of each package to its destination based on the current time of day.</p>
+                <p class="text-justify">The project was built with Python, and packages are sorted on each truck using the nearest neighbor algorithm. It utilizes a custom hash table for the storage and retrieval of package object data.</p>
+            </div>
+            
+        </div>
 
-            </div>
-        </div>
-        
         <div class="row text-center">
             <div class="col-md-9 offset-md-3">
-                <h1>ABOUT</h1>
+                <h1 id="about">ABOUT</h1>
                 <hr>
-                <p class="text-justify">Hello, I'm Sergio, a passionate web developer with a versatile skill set and a love for crafting seamless digital experiences. My journey in the world of technology began with HTML, CSS, and JavaScript, which laid the foundation for my expertise in front-end development. I've honed my skills in responsive design using Bootstrap and explored the potential of Node.js and Express.js for robust back-end solutions.</p>
-                <p class="text-justify">What sets me apart is my enthusiasm for cutting-edge technologies. I've delved into the realms of machine learning with TensorFlow.js, adding a layer of intelligence to my projects. Databases are my playground, where I navigate the intricacies of PostgreSQL and MySQL to ensure data integrity and efficiency.</p>
-                <p class="text-justify">Beyond the web, I'm fluent in Java, Python, and C++, broadening my scope and empowering me to solve complex problems across different domains. My commitment to staying on the pulse of technology ensures that I deliver solutions that are not just functional but also future-proof.</p>
-                
+                <p class="text-justify">Hello, I'm Sergio, a passionate web developer with a versatile skill set and a love for crafting unique and practical websites. My journey in the world of technology began with HTML, CSS, and JavaScript, which laid the foundation for my expertise in front-end development. Since then, I've honed my skills in responsive design using Bootstrap and explored the potential of Node.js and Express.js for back-end solutions.</p>
+                <p class="text-justify">Im a big beleiver in continual, consistent learning. I've delved into the world of machine learning with TensorFlow.js, adding a layer of intelligence to my projects. I also enjoy databse management using PostgreSQL and MySQL to ensure data integrity and efficiency.</p>
+                <p class="text-justify">Beyond the web, I'm fluent in Java, Python, and C++, broadening my scope and allowing me to solve complex problems across different domains.</p>   
             </div>
         </div>
         <div class="row text-center">
             <div class="col-md-9 offset-md-3">
-                <h1>CONTACT</h1>
+                <h1 id="contact">CONTACT</h1>
                 <hr>
             </div>
         </div>
         <div class="row text-center">
             <div class="col-md-9 offset-md-3">
-                
                 <form action="https://formspree.io/f/xeqyjqrv" method="POST">  
                     <label class="d-block">
                         <p>YOUR EMAIL:</p>
